@@ -1,0 +1,338 @@
+[
+  {
+    "number": "1",
+    "id": "SS/6857 CHEMIA ROG",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "22-600 Tomaszów Lubelski\nwoj. lubelskie",
+    "distance": "400 km",
+    "perKilometer": "4.65 zł",
+    "surcharge": "300.00 zł",
+    "price": "1860.00 zł",
+    "loadingDate": "2023-05-10",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "2",
+    "id": "SS/7028 CHEMIA ROG",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "55-100 Trzebnica\nwoj. dolnośląskie",
+    "distance": "184 km",
+    "perKilometer": "6.03 zł",
+    "surcharge": "300.00 zł",
+    "price": "1109.60 zł",
+    "loadingDate": "2023-05-10",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "3",
+    "id": "SS/PALETY SOLEC",
+    "from": "05-504 Złotokłos\nwoj. mazowieckie",
+    "destination": "86-050 Solec Kujawski\nwoj. kujawsko-pomorskie",
+    "distance": "272 km",
+    "perKilometer": "4.63 zł",
+    "surcharge": "200.00 zł",
+    "price": "1260.80 zł",
+    "loadingDate": "2023-05-15",
+    "comments": [
+      "Zbiórka palet dnia 15.05.2023",
+      "﻿",
+      "05-504 ZŁOTOKŁOS",
+      "96-500 SOCHACZEW ",
+      "87-800 WŁOCŁAWEK",
+      "",
+      "Rozładunek SOLBET SOLEC do godz. 16:00",
+      "ZAŁADUNEK I ROZŁADUNEK BOKIEM !!!"
+    ]
+  },
+  {
+    "number": "4",
+    "id": "SS/V-11/2023/RURKA SAMOCHÓD WYWROTKA",
+    "from": "97-406 Rogowiec, ul.ENERGETYCZNA 7, Bełchatów 5\nOddział Elektrownia Bełchatów\nwoj. łódzkie",
+    "destination": "72-100 Rurka\nwoj. zachodniopomorskie",
+    "distance": "516 km",
+    "perKilometer": "3.97 zł",
+    "surcharge": "150.00 zł",
+    "price": "2050.00 zł",
+    "loadingDate": "2023-05-17",
+    "comments": [
+      "ZAŁADUNEK: ELEKTROWNIA BEŁCHATÓW \"STARY BLOK\" 17.05.2023 R. W GODZ. 7.00-21.00, ROZŁADUNEK: 18.05.2023 R., SOLBET, RURKA 4, 72-100 RURKA W GODZ. 7.00-14.00. (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO."
+    ]
+  },
+  {
+    "number": "5",
+    "id": "SS/V-12/2023/RURKA SAMOCHÓD WYWROTKA",
+    "from": "97-406 Rogowiec, ul.ENERGETYCZNA 7, Bełchatów 5\nOddział Elektrownia Bełchatów\nwoj. łódzkie",
+    "destination": "72-100 Rurka\nwoj. zachodniopomorskie",
+    "distance": "516 km",
+    "perKilometer": "3.97 zł",
+    "surcharge": "150.00 zł",
+    "price": "2050.00 zł",
+    "loadingDate": "2023-05-18",
+    "comments": [
+      "ZAŁADUNEK: ELEKTROWNIA BEŁCHATÓW \"STARY BLOK\" 18.05.2023 R. W GODZ. 7.00-21.00, ROZŁADUNEK: 19.05.2023 R., SOLBET, RURKA 4, 72-100 RURKA W GODZ. 7.00-14.00. (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO."
+    ]
+  },
+  {
+    "number": "6",
+    "id": "SS/7036 CHEMIA ROG",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "21-100 Lubartów\nwoj. lubelskie",
+    "distance": "302 km",
+    "perKilometer": "4.23 zł",
+    "surcharge": "100.00 zł",
+    "price": "1277.80 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "7",
+    "id": "SS/ZAM/22/32321",
+    "from": "72-100 Rurka\nRurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO)\nwoj. zachodniopomorskie",
+    "destination": "69-110 Rzepin\nwoj. lubuskie",
+    "distance": "190 km",
+    "perKilometer": "4.66 zł",
+    "surcharge": "50.00 zł",
+    "price": "886.00 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "",
+      "Kierowca podstawiający się pod załadunek do firmy SOLBET Rurka zatrzymuje się przed bramą Zakładu i telefonuje na nr telefonu 789 154 851 zgłaszając swoją obecność. OBOWIĄZKOWO PODAJE NUMER ZLECENIA oraz swoje imię, nazwisko, numer ciągnika i nie wysiadając z pojazdu czeka na numer wjazdowy otrzymany przez sms.",
+      "ZAŁADUNEK DO GODZINY 17:00!! PROSZĘ PODAĆ GODZINĘ ZAŁADUNKU W RURCE I ROZŁADUNKU! ",
+      "72-100 Rurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO",
+      ""
+    ]
+  },
+  {
+    "number": "8",
+    "id": "SP/ZAM/23/01336",
+    "from": "08-125 PODNIEŚNO\nPODNIEŚNO, MAZOWIECKA 2\nwoj. mazowieckie",
+    "destination": "19-300 Ełk\nwoj. warmińsko-mazurskie",
+    "distance": "203 km",
+    "perKilometer": "4.34 zł",
+    "surcharge": "50.00 zł",
+    "price": "882.30 zł",
+    "loadingDate": "2023-05-11",
+    "comments": ["PROSZĘ PODAĆ DATĘ ZAŁADUNKU I ROZŁADUNKU!"]
+  },
+  {
+    "number": "9",
+    "id": "SS/6919 CHEMIA AL",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "64-965 Okonek\nwoj. wielkopolskie",
+    "distance": "200 km",
+    "perKilometer": "4.65 zł",
+    "surcharge": "50.00 zł",
+    "price": "930.00 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "10",
+    "id": "SP/ZAM/23/01099",
+    "from": "08-125 PODNIEŚNO\nPODNIEŚNO, MAZOWIECKA 2\nwoj. mazowieckie",
+    "destination": "11-400 Kętrzyn\nwoj. warmińsko-mazurskie",
+    "distance": "263 km",
+    "perKilometer": "4.09 zł",
+    "surcharge": "50.00 zł",
+    "price": "1075.70 zł",
+    "loadingDate": "2023-05-11",
+    "comments": ["PROSZĘ PODAĆ DATĘ ZAŁADUNKU I ROZŁADUNKU!"]
+  },
+  {
+    "number": "11",
+    "id": "SS/ZAM/23/07247",
+    "from": "72-100 Rurka\nRurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO)\nwoj. zachodniopomorskie",
+    "destination": "66-470 Kostrzyn nad Odrą\nwoj. lubuskie",
+    "distance": "128 km",
+    "perKilometer": "5.85 zł",
+    "surcharge": "50.00 zł",
+    "price": "750.00 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "Kierowca podstawiający się pod załadunek do firmy SOLBET Rurka zatrzymuje się przed bramą Zakładu i telefonuje na nr telefonu 789 154 851 zgłaszając swoją obecność. OBOWIĄZKOWO PODAJE NUMER ZLECENIA oraz swoje imię, nazwisko, numer ciągnika i nie wysiadając z pojazdu czeka na numer wjazdowy otrzymany przez sms.",
+      "ZAŁADUNEK DO GODZINY 17:00!! PROSZĘ PODAĆ GODZINĘ ZAŁADUNKU W RURCE I ROZŁADUNKU! ",
+      "72-100 Rurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO",
+      ""
+    ]
+  },
+  {
+    "number": "12",
+    "id": "SP/ZAM/23/01111",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "07-400 Ostrołęka\nwoj. mazowieckie",
+    "distance": "268 km",
+    "perKilometer": "4.08 zł",
+    "surcharge": "50.00 zł",
+    "price": "1095.20 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "Brak parkingu-konieczna awizacja na rozładunek!",
+      "",
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "13",
+    "id": "SS/ZAM/22/33127+SS/ZAM/23/07371",
+    "from": "72-100 Rurka\nRurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO)\nwoj. zachodniopomorskie",
+    "destination": "67-200 Głogów\nwoj. dolnośląskie",
+    "distance": "287 km",
+    "perKilometer": "4.07 zł",
+    "surcharge": "50.00 zł",
+    "price": "1169.30 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "Kierowca podstawiający się pod załadunek do firmy SOLBET Rurka zatrzymuje się przed bramą Zakładu i telefonuje na nr telefonu 789 154 851 zgłaszając swoją obecność. OBOWIĄZKOWO PODAJE NUMER ZLECENIA oraz swoje imię, nazwisko, numer ciągnika i nie wysiadając z pojazdu czeka na numer wjazdowy otrzymany przez sms.",
+      "ZAŁADUNEK DO GODZINY 17:00!! PROSZĘ PODAĆ GODZINĘ ZAŁADUNKU W RURCE I ROZŁADUNKU! ",
+      "72-100 Rurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO",
+      ""
+    ]
+  },
+  {
+    "number": "14",
+    "id": "SS/7052 CHEMIA AL",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "89-510 Bysław\nwoj. kujawsko-pomorskie",
+    "distance": "105 km",
+    "perKilometer": "7.14 zł",
+    "surcharge": "50.00 zł",
+    "price": "750.00 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "15",
+    "id": "SS/6643 CHEMIA AL",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "08-300 Żanecin\nwoj. mazowieckie",
+    "distance": "298 km",
+    "perKilometer": "4.06 zł",
+    "surcharge": "50.00 zł",
+    "price": "1212.20 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "16",
+    "id": "SS/7165 CHEMIA AL",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "73-155 Runowo Pomorskie\nwoj. zachodniopomorskie",
+    "distance": "261 km",
+    "perKilometer": "4.09 zł",
+    "surcharge": "50.00 zł",
+    "price": "1067.90 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "17",
+    "id": "SP/ZAM/23/01225",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "12-100 Szczytno\nwoj. warmińsko-mazurskie",
+    "distance": "243 km",
+    "perKilometer": "4.30 zł",
+    "surcharge": "50.00 zł",
+    "price": "1046.30 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "18",
+    "id": "SS/ZAM/22/33472",
+    "from": "72-100 Rurka\nRurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO)\nwoj. zachodniopomorskie",
+    "destination": "66-600 Krosno Odrzańskie\nwoj. lubuskie",
+    "distance": "215 km",
+    "perKilometer": "4.33 zł",
+    "surcharge": "50.00 zł",
+    "price": "931.50 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "Kierowca podstawiający się pod załadunek do firmy SOLBET Rurka zatrzymuje się przed bramą Zakładu i telefonuje na nr telefonu 789 154 851 zgłaszając swoją obecność. OBOWIĄZKOWO PODAJE NUMER ZLECENIA oraz swoje imię, nazwisko, numer ciągnika i nie wysiadając z pojazdu czeka na numer wjazdowy otrzymany przez sms.",
+      "ZAŁADUNEK DO GODZINY 17:00!! PROSZĘ PODAĆ GODZINĘ ZAŁADUNKU W RURCE I ROZŁADUNKU! ",
+      "72-100 Rurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO",
+      ""
+    ]
+  },
+  {
+    "number": "19",
+    "id": "SS/ZAM/23/07441+SS/ZAM/23/07451",
+    "from": "72-100 Rurka\nRurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO)\nwoj. zachodniopomorskie",
+    "destination": "68-120 Iłowa+ Konin Żagański\nwoj. lubuskie",
+    "distance": "299 km",
+    "perKilometer": "4.16 zł",
+    "surcharge": "50.00 zł",
+    "price": "1246.00 zł",
+    "loadingDate": "2023-05-11",
+    "comments": [
+      "",
+      "Kierowca podstawiający się pod załadunek do firmy SOLBET Rurka zatrzymuje się przed bramą Zakładu i telefonuje na nr telefonu 789 154 851 zgłaszając swoją obecność. OBOWIĄZKOWO PODAJE NUMER ZLECENIA oraz swoje imię, nazwisko, numer ciągnika i nie wysiadając z pojazdu czeka na numer wjazdowy otrzymany przez sms.",
+      "ZAŁADUNEK DO GODZINY 17:00!! PROSZĘ PODAĆ GODZINĘ ZAŁADUNKU W RURCE I ROZŁADUNKU! ",
+      "72-100 Rurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO",
+      ""
+    ]
+  },
+  {
+    "number": "20",
+    "id": "SP/ZAM/22/11897",
+    "from": "08-125 PODNIEŚNO\nPODNIEŚNO, MAZOWIECKA 2\nwoj. mazowieckie",
+    "destination": "11-730 Mikołajki\nwoj. warmińsko-mazurskie",
+    "distance": "234 km",
+    "perKilometer": "4.31 zł",
+    "surcharge": "50.00 zł",
+    "price": "1009.40 zł",
+    "loadingDate": "2023-05-11",
+    "comments": ["PROSZĘ PODAĆ DATĘ ZAŁADUNKU I ROZŁADUNKU!"]
+  }
+]
