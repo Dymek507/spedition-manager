@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "types": ["node", "vite/client"]
+  },
+  "exclude": ["node_modules"]
+}

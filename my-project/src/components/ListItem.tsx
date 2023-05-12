@@ -1,25 +1,21 @@
 import React from 'react'
-import solbetLogo from '../assets/solbet.jpg'
-import { ICargo } from '../data/sped-data'
 import { dataConverter, stringDivide } from '../helpers/dataConverter'
 import PlaceDisplay from './PlaceDisplay'
+import { ICargo } from '../types/modelTypes'
 
 interface ListItemProps {
   itemData: ICargo
+  openModal: (itemData: ICargo) => void
 }
 
-
-const ListItem = ({ itemData }: ListItemProps) => {
-  const openModal = (id: string) => {
-    console.log('open modal' + id)
-  }
+const ListItem = ({ itemData, openModal }: ListItemProps) => {
   return (
     <section className='flex gap-6 text-xl text-white border border-black bg-sky-700'>
-      <div className='w-16 h-24 bg-white flex-center'>
-        <img src={solbetLogo} alt="Company_logo" />
+      <div className='w-24 h-24 bg-white flex-center'>
+        <img src="https://www.abud.pl/data/lang/pol/producers/gfx/projector/1393515502_1.jpg" alt="Company_logo" />
       </div>
       <div className='w-36 flex-center'>
-        {itemData.id}
+        {itemData.id.slice(0, 18)}
       </div>
       <PlaceDisplay placeData={itemData.from} />
       <div className='flex-center'>{itemData.distance}</div>
@@ -37,7 +33,7 @@ const ListItem = ({ itemData }: ListItemProps) => {
         {itemData.loadingDate}
       </div>
       <div className="flex-center">
-        <button onClick={() => openModal(itemData.id)}>Szczegóły</button>
+        <button onClick={() => openModal(itemData)}>Szczegóły</button>
       </div>
     </section>
 
