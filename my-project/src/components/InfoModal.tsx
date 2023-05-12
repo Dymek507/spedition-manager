@@ -37,7 +37,17 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
   const [directionsResponse, setDirectionsResponse] = React.useState<any>(null)
   const [distance, setDistance] = React.useState<undefined | string>()
 
-
+  const calculateRoute = async (fromCords, destinationCords) => {
+    if (fromLocation === undefined || destinationLocation === undefined) return
+    const directionsService = new google.maps.DirectionsService();
+    const results = await directionsService.route({
+      origin: fromCords,
+      destination: destinationCords,
+      travelMode: google.maps.TravelMode.DRIVING,
+    });
+    setDirectionsResponse(results)
+    setDistance(results.routes[0].legs[0].distance?.text)
+  }
 
   React.useEffect(() => {
     const getCords = async () => {
@@ -48,36 +58,27 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
       setDestinationLocation(destinationCords)
       const center = { lat: (fromCords.lat + destinationCords.lat) / 2, lng: (fromCords.lng + destinationCords.lng) / 2 }
       setCenterLocation(center)
+      await calculateRoute(fromCords, destinationCords)
     }
     getCords()
   }, [cargo])
+
+  const closeModal = () => {
+    closeHandler()
+    setDirectionsResponse(null)
+    setDistance(undefined)
+  }
 
   // const { isLoaded } = useLoadScript({
   //   // @ts-ignore
   //   googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string,
   // })
 
-  const calculateRoute = async () => {
-    if (fromLocation === undefined || destinationLocation === undefined) return
-    const directionsService = new google.maps.DirectionsService();
-    const results = await directionsService.route({
-      origin: fromLocation,
-      destination: destinationLocation,
-      travelMode: google.maps.TravelMode.DRIVING,
-    });
-    setDirectionsResponse(results)
-    setDistance(results.routes[0].legs[0].distance?.text)
-
-  }
-  const clearRoute = () => {
-    setDirectionsResponse(null)
-    setDistance(undefined)
-  }
 
   const { isLoaded } = useJsApiLoader({
     // @ts-ignore
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string,
-    libraries: ['places'],
+    // libraries: ['places'],
   })
 
   if (!isLoaded) return <div>Loading...</div>
@@ -86,15 +87,17 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
     <div>
       <Modal
         open={open}
-        onClose={closeHandler}
+        onClose={closeModal}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <div className='bg-red-400'>
-            <Button onClick={calculateRoute}>Calculate Route</Button>
-            {distance}
+          <div className='flex-center'>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              {distance}
+            </Typography>
           </div>
+
           {/* <div className='bg-red-400'>
             <Typography id="modal-modal-title" variant="h6" component="h2">
               {cargo.comments}
