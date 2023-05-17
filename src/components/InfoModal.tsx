@@ -30,6 +30,7 @@ interface InfoModalProps {
 
 
 const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
+  const [routesArray, setRoutesArray] = React.useState<any>([])
 
   const [centerLocation, setCenterLocation] = React.useState({ lat: 52.237049, lng: 21.017532 })
   const [fromLocation, setFromLocation] = React.useState({ lat: 0, lng: 0 })
@@ -44,7 +45,9 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
       origin: fromCords,
       destination: destinationCords,
       travelMode: google.maps.TravelMode.DRIVING,
+      provideRouteAlternatives: true,
     });
+    console.log(results)
     setDirectionsResponse(results)
     setDistance(results.routes[0].legs[0].distance?.text)
   }

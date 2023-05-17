@@ -5,12 +5,12 @@
     "from": "05-504 Złotokłos\nwoj. mazowieckie",
     "destination": "86-050 Solec Kujawski\nwoj. kujawsko-pomorskie",
     "distance": "272 km",
-    "perKilometer": "4.81 zł",
-    "surcharge": "250.00 zł",
-    "price": "1310.80 zł",
-    "loadingDate": "2023-05-15",
+    "perKilometer": "5.18 zł",
+    "surcharge": "350.00 zł",
+    "price": "1410.80 zł",
+    "loadingDate": "2023-05-18",
     "comments": [
-      "Zbiórka palet dnia 15.05.2023",
+      "Zbiórka palet dnia 18.05.2023",
       "﻿",
       "05-504 ZŁOTOKŁOS",
       "96-500 SOCHACZEW ",
@@ -22,289 +22,50 @@
   },
   {
     "number": "2",
-    "id": "SS/V-12/2023/RURKA SAMOCHÓD WYWROTKA",
-    "from": "97-406 Rogowiec, ul.ENERGETYCZNA 7, Bełchatów 5\nOddział Elektrownia Bełchatów\nwoj. łódzkie",
-    "destination": "72-100 Rurka\nwoj. zachodniopomorskie",
-    "distance": "516 km",
-    "perKilometer": "3.97 zł",
-    "surcharge": "150.00 zł",
-    "price": "2050.00 zł",
-    "loadingDate": "2023-05-18",
+    "id": "SS/ZAM/23/07536",
+    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
+    "destination": "64-420 Kwilcz\nwoj. wielkopolskie",
+    "distance": "216 km",
+    "perKilometer": "5.02 zł",
+    "surcharge": "200.00 zł",
+    "price": "1085.60 zł",
+    "loadingDate": "2023-05-15",
     "comments": [
-      "ZAŁADUNEK: ELEKTROWNIA BEŁCHATÓW \"STARY BLOK\" 18.05.2023 R. W GODZ. 7.00-21.00, ROZŁADUNEK: 19.05.2023 R., SOLBET, RURKA 4, 72-100 RURKA W GODZ. 7.00-14.00. (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO."
+      "",
+      "",
+      "ZAŁADUNEK DO GODZ 17:00 !!",
+      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
     ]
   },
   {
     "number": "3",
-    "id": "SS/7036 CHEMIA ROG",
-    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
-    "destination": "21-100 Lubartów\nwoj. lubelskie",
-    "distance": "302 km",
-    "perKilometer": "4.39 zł",
-    "surcharge": "150.00 zł",
-    "price": "1327.80 zł",
-    "loadingDate": "2023-05-11",
+    "id": "SS/ZAM/23/07539",
+    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
+    "destination": "64-420 Kwilcz\nwoj. wielkopolskie",
+    "distance": "216 km",
+    "perKilometer": "5.02 zł",
+    "surcharge": "200.00 zł",
+    "price": "1085.60 zł",
+    "loadingDate": "2023-05-15",
     "comments": [
-      "załadunek do 17.00, plandeka",
-      "awizacja do 14.00 w bieżącym dniu",
-      "proszę podać datę rozładunku",
       "",
-      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+      "",
+      "ZAŁADUNEK DO GODZ 17:00 !!",
+      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
     ]
   },
   {
     "number": "4",
-    "id": "SS/V-11/2023/RURKA SAMOCHÓD WYWROTKA",
-    "from": "97-406 Rogowiec, ul.ENERGETYCZNA 7, Bełchatów 5\nOddział Elektrownia Bełchatów\nwoj. łódzkie",
-    "destination": "72-100 Rurka\nwoj. zachodniopomorskie",
-    "distance": "516 km",
-    "perKilometer": "3.97 zł",
-    "surcharge": "150.00 zł",
-    "price": "2050.00 zł",
-    "loadingDate": "2023-05-17",
-    "comments": [
-      "ZAŁADUNEK: ELEKTROWNIA BEŁCHATÓW \"STARY BLOK\" 17.05.2023 R. W GODZ. 7.00-21.00, ROZŁADUNEK: 18.05.2023 R., SOLBET, RURKA 4, 72-100 RURKA W GODZ. 7.00-14.00. (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO."
-    ]
-  },
-  {
-    "number": "5",
-    "id": "SS/ZAM/23/07218",
-    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
-    "destination": "09-440 Staroźreby\nwoj. mazowieckie",
-    "distance": "168 km",
-    "perKilometer": "4.99 zł",
-    "surcharge": "100.00 zł",
-    "price": "839.20 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "",
-      "",
-      "ZAŁADUNEK DO GODZ 17:00 !!",
-      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
-    ]
-  },
-  {
-    "number": "6",
-    "id": "SP/ZAM/22/11896",
-    "from": "08-125 PODNIEŚNO\nPODNIEŚNO, MAZOWIECKA 2\nwoj. mazowieckie",
-    "destination": "11-730 Mikołajki\nwoj. warmińsko-mazurskie",
-    "distance": "234 km",
-    "perKilometer": "4.52 zł",
-    "surcharge": "100.00 zł",
-    "price": "1059.40 zł",
-    "loadingDate": "2023-05-11",
-    "comments": ["PROSZĘ PODAĆ DATĘ ZAŁADUNKU I ROZŁADUNKU!"]
-  },
-  {
-    "number": "7",
-    "id": "SP/ZAM/22/11897",
-    "from": "08-125 PODNIEŚNO\nPODNIEŚNO, MAZOWIECKA 2\nwoj. mazowieckie",
-    "destination": "11-730 Mikołajki\nwoj. warmińsko-mazurskie",
-    "distance": "234 km",
-    "perKilometer": "4.52 zł",
-    "surcharge": "100.00 zł",
-    "price": "1059.40 zł",
-    "loadingDate": "2023-05-11",
-    "comments": ["PROSZĘ PODAĆ DATĘ ZAŁADUNKU I ROZŁADUNKU!"]
-  },
-  {
-    "number": "8",
-    "id": "SS/ZAM/22/31156",
-    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
-    "destination": "09-470 Nowe Miszewo\nwoj. mazowieckie",
-    "distance": "166 km",
-    "perKilometer": "5.00 zł",
-    "surcharge": "100.00 zł",
-    "price": "830.40 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "",
-      "",
-      "ZAŁADUNEK DO GODZ 17:00 !!",
-      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
-    ]
-  },
-  {
-    "number": "9",
-    "id": "SS/ZAM/22/31158",
-    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
-    "destination": "09-470 Nowe Miszewo\nwoj. mazowieckie",
-    "distance": "166 km",
-    "perKilometer": "5.00 zł",
-    "surcharge": "100.00 zł",
-    "price": "830.40 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "",
-      "",
-      "ZAŁADUNEK DO GODZ 17:00 !!",
-      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
-    ]
-  },
-  {
-    "number": "10",
-    "id": "SP/ZAM/23/01225",
-    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
-    "destination": "12-100 Szczytno\nwoj. warmińsko-mazurskie",
-    "distance": "243 km",
-    "perKilometer": "4.51 zł",
-    "surcharge": "100.00 zł",
-    "price": "1096.30 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "załadunek w godzinach od 7.00 do 14.30, plandeka",
-      "WJAZD OD UL. PRZEMYSŁOWEJ",
-      "proszę podać datę rozładunku",
-      "",
-      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
-    ]
-  },
-  {
-    "number": "11",
-    "id": "SS/7165 CHEMIA AL",
-    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
-    "destination": "73-155 Runowo Pomorskie\nwoj. zachodniopomorskie",
-    "distance": "261 km",
-    "perKilometer": "4.28 zł",
-    "surcharge": "100.00 zł",
-    "price": "1117.90 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "załadunek w godzinach od 7.00 do 14.30, plandeka",
-      "WJAZD OD UL. PRZEMYSŁOWEJ",
-      "proszę podać datę rozładunku",
-      "",
-      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
-    ]
-  },
-  {
-    "number": "12",
-    "id": "SS/ZAM/23/07064",
-    "from": "72-100 Rurka\nRurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO)\nwoj. zachodniopomorskie",
-    "destination": "58-500 Jelenia Góra\nwoj. dolnośląskie",
-    "distance": "398 km",
-    "perKilometer": "4.15 zł",
-    "surcharge": "100.00 zł",
-    "price": "1652.20 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "",
-      "Kierowca podstawiający się pod załadunek do firmy SOLBET Rurka zatrzymuje się przed bramą Zakładu i telefonuje na nr telefonu 789 154 851 zgłaszając swoją obecność. OBOWIĄZKOWO PODAJE NUMER ZLECENIA oraz swoje imię, nazwisko, numer ciągnika i nie wysiadając z pojazdu czeka na numer wjazdowy otrzymany przez sms.",
-      "ZAŁADUNEK DO GODZINY 17:00!! PROSZĘ PODAĆ GODZINĘ ZAŁADUNKU W RURCE I ROZŁADUNKU! ",
-      "72-100 Rurka 4 (zjazd z drogi NR S3 na 73 km w kierunku GOLENIOWSKIEGO PARKU PRZEMYSŁOWEGO",
-      ""
-    ]
-  },
-  {
-    "number": "13",
-    "id": "SS/ZAM/23/07067",
-    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
-    "destination": "09-212 Bonisław\nwoj. mazowieckie",
-    "distance": "171 km",
-    "perKilometer": "4.98 zł",
-    "surcharge": "100.00 zł",
-    "price": "852.40 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "",
-      "",
-      "ZAŁADUNEK DO GODZ 17:00 !!",
-      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
-    ]
-  },
-  {
-    "number": "14",
-    "id": "SP/ZAM/22/12471",
-    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
-    "destination": "11-400 Kętrzyn\nwoj. warmińsko-mazurskie",
-    "distance": "304 km",
-    "perKilometer": "4.22 zł",
-    "surcharge": "100.00 zł",
-    "price": "1285.60 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "ZAŁADUNEK DO GODZ 17:00 !!",
-      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
-    ]
-  },
-  {
-    "number": "15",
-    "id": "SS/ZAM/23/07349",
-    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
-    "destination": "11-100 Lidzbark Warmiński\nwoj. warmińsko-mazurskie",
-    "distance": "264 km",
-    "perKilometer": "4.27 zł",
-    "surcharge": "100.00 zł",
-    "price": "1129.60 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "ZAŁADUNEK DO GODZ 17:00 !!",
-      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
-    ]
-  },
-  {
-    "number": "16",
-    "id": "SS/7052 CHEMIA AL",
-    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
-    "destination": "89-510 Bysław\nwoj. kujawsko-pomorskie",
-    "distance": "105 km",
-    "perKilometer": "7.61 zł",
-    "surcharge": "100.00 zł",
-    "price": "800.00 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "załadunek w godzinach od 7.00 do 14.30, plandeka",
-      "WJAZD OD UL. PRZEMYSŁOWEJ",
-      "proszę podać datę rozładunku",
-      "",
-      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
-    ]
-  },
-  {
-    "number": "17",
-    "id": "SS/6750 CHEMIA AL",
-    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
-    "destination": "57-200 Ząbkowice Śląskie\nwoj. dolnośląskie",
-    "distance": "377 km",
-    "perKilometer": "4.16 zł",
-    "surcharge": "100.00 zł",
-    "price": "1570.30 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "załadunek w godzinach od 7.00 do 14.30, plandeka",
-      "WJAZD OD UL. PRZEMYSŁOWEJ",
-      "proszę podać datę rozładunku",
-      "",
-      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
-    ]
-  },
-  {
-    "number": "18",
-    "id": "SS/ZAM/23/07350",
-    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
-    "destination": "11-100 Lidzbark Warmiński\nwoj. warmińsko-mazurskie",
-    "distance": "264 km",
-    "perKilometer": "4.27 zł",
-    "surcharge": "100.00 zł",
-    "price": "1129.60 zł",
-    "loadingDate": "2023-05-11",
-    "comments": [
-      "ZAŁADUNEK DO GODZ 17:00 !!",
-      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
-    ]
-  },
-  {
-    "number": "19",
     "id": "SS/PALETY SOLEC",
     "from": "26-706 Lucin\nwoj. mazowieckie",
     "destination": "86-050 Solec Kujawski\nwoj. kujawsko-pomorskie",
     "distance": "370 km",
-    "perKilometer": "4.03 zł",
-    "surcharge": "50.00 zł",
-    "price": "1493.00 zł",
-    "loadingDate": "2023-05-15",
+    "perKilometer": "4.30 zł",
+    "surcharge": "150.00 zł",
+    "price": "1593.00 zł",
+    "loadingDate": "2023-05-18",
     "comments": [
-      "Zbiórka palet dnia 15.05.2023",
+      "Zbiórka palet dnia 18﻿﻿﻿﻿﻿﻿.05.2023",
       "",
       "26-106 LUCIN",
       "99-300 KUTNO",
@@ -314,17 +75,17 @@
     ]
   },
   {
-    "number": "20",
+    "number": "5",
     "id": "SS/PALETY SOLEC",
     "from": "62-740 Tuliszków\nwoj. wielkopolskie",
     "destination": "86-050 Solec Kujawski\nwoj. kujawsko-pomorskie",
     "distance": "194 km",
-    "perKilometer": "4.65 zł",
-    "surcharge": "50.00 zł",
-    "price": "903.60 zł",
-    "loadingDate": "2023-05-15",
+    "perKilometer": "5.17 zł",
+    "surcharge": "150.00 zł",
+    "price": "1003.60 zł",
+    "loadingDate": "2023-05-18",
     "comments": [
-      "Zbiórka palet dnia 15.05.2023",
+      "Zbiórka palet dnia 18.05.2023",
       "",
       "62-470 TULISZKÓW",
       "62-720 BRUDZEW",
@@ -333,6 +94,260 @@
       "",
       "Rozładunek SOLBET SOLEC do godz. 16:00",
       "ZAŁADUNEK I ROZŁADUNEK BOKIEM !!!"
+    ]
+  },
+  {
+    "number": "6",
+    "id": "SS/PALETY SOLEC",
+    "from": "84-220 Strzebielino\nwoj. pomorskie",
+    "destination": "86-050 Solec Kujawski\nwoj. kujawsko-pomorskie",
+    "distance": "277 km",
+    "perKilometer": "4.44 zł",
+    "surcharge": "150.00 zł",
+    "price": "1230.30 zł",
+    "loadingDate": "2023-05-18",
+    "comments": [
+      "Zbiórka palet dnia 18.05.2023",
+      "",
+      "84-220 STRZEBIELINO",
+      "84-200 GOWINO",
+      "83-021 ROKITNICA",
+      "",
+      "Rozładunek SOLBET SOLEC do godz. 16:00",
+      "ZAŁADUNEK I ROZŁADUNEK BOKIEM !!!"
+    ]
+  },
+  {
+    "number": "7",
+    "id": "SS/7260 CHEMIA ROG",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "64-200 Wolsztyn\nwoj. wielkopolskie",
+    "distance": "329 km",
+    "perKilometer": "4.20 zł",
+    "surcharge": "100.00 zł",
+    "price": "1383.10 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "8",
+    "id": "SS/7229 CHEMIA ROG",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "66-600 Krosno Odrzańskie\nwoj. lubuskie",
+    "distance": "352 km",
+    "perKilometer": "4.18 zł",
+    "surcharge": "100.00 zł",
+    "price": "1472.80 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "9",
+    "id": "SP/ZAM/23/01216",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "05-870 Błonie\nwoj. mazowieckie",
+    "distance": "181 km",
+    "perKilometer": "4.95 zł",
+    "surcharge": "100.00 zł",
+    "price": "896.40 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "10",
+    "id": "SS/34643 CHEMIA ROG",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "44-352 Czyżowice\nwoj. śląskie",
+    "distance": "220 km",
+    "perKilometer": "4.55 zł",
+    "surcharge": "100.00 zł",
+    "price": "1002.00 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "11",
+    "id": "SS/ZAM/23/07214",
+    "from": "86-050 SOLEC KUJAWSKI\nTORUŃSKA 71\nwoj. kujawsko-pomorskie",
+    "destination": "63-100 Mechlin\nwoj. wielkopolskie",
+    "distance": "181 km",
+    "perKilometer": "2.87 zł",
+    "surcharge": "100.00 zł",
+    "price": "519.92 zł",
+    "loadingDate": "2023-05-15",
+    "comments": [
+      "ROZŁADUNEK 8-15",
+      "",
+      "ZAŁADUNEK DO GODZ 17:00 !!",
+      "Kierowca podstawiający się pod załadunek w Solcu Kujawskim wjeżdża na zewnętrzny parking SOLBET-u i z auta telefonuje na nr telefonu komórkowego 601 919 045 zgłaszając swoją obecność. OBOWIĄZKOWO MUSI PODAĆ NUMER ZLECENIA, swoje imię, nazwisko oraz numer ciągnika. Nie przychodzi do Działu Handlowego (do okienka)"
+    ]
+  },
+  {
+    "number": "12",
+    "id": "SS/6927 CHEMIA AL",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "62-085 Skoki\nwoj. wielkopolskie",
+    "distance": "169 km",
+    "perKilometer": "4.99 zł",
+    "surcharge": "100.00 zł",
+    "price": "843.60 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "13",
+    "id": "SS/7039 CHEMIA AL",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "64-965 Okonek\nwoj. wielkopolskie",
+    "distance": "200 km",
+    "perKilometer": "4.90 zł",
+    "surcharge": "100.00 zł",
+    "price": "980.00 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "14",
+    "id": "SS/ZAM/23/07603",
+    "from": "08-125 PODNIEŚNO\nPODNIEŚNO, MAZOWIECKA 2\nwoj. mazowieckie",
+    "destination": "15-001 Białystok\nwoj. podlaskie",
+    "distance": "161 km",
+    "perKilometer": "5.02 zł",
+    "surcharge": "100.00 zł",
+    "price": "808.40 zł",
+    "loadingDate": "2023-05-16",
+    "comments": ["PROSZĘ PODAĆ DATĘ ZAŁADUNKU I ROZŁADUNKU!"]
+  },
+  {
+    "number": "15",
+    "id": "SS/6795 CHENIA AL",
+    "from": "87-700 ALEKSANDRÓW KUJAWSKI\nHALINOWO 3\nwoj. kujawsko-pomorskie",
+    "destination": "96-200 Rawa Mazowiecka\nwoj. łódzkie",
+    "distance": "194 km",
+    "perKilometer": "4.91 zł",
+    "surcharge": "100.00 zł",
+    "price": "953.60 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek w godzinach od 7.00 do 14.30, plandeka",
+      "WJAZD OD UL. PRZEMYSŁOWEJ",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "16",
+    "id": "SS/34577 CHEMIA ROG",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "41-300 Dąbrowa Górnicza\nwoj. śląskie",
+    "distance": "148 km",
+    "perKilometer": "5.40 zł",
+    "surcharge": "100.00 zł",
+    "price": "800.00 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "17",
+    "id": "SP/ZAM/23/01243",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "18-300 Zambrów\nwoj. podlaskie",
+    "distance": "309 km",
+    "perKilometer": "4.22 zł",
+    "surcharge": "100.00 zł",
+    "price": "1305.10 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
+    ]
+  },
+  {
+    "number": "18",
+    "id": "SS/ZAM/23/06813",
+    "from": "08-125 PODNIEŚNO\nPODNIEŚNO, MAZOWIECKA 2\nwoj. mazowieckie",
+    "destination": "16-400 Suwałki\nwoj. podlaskie",
+    "distance": "250 km",
+    "perKilometer": "4.40 zł",
+    "surcharge": "75.00 zł",
+    "price": "1100.00 zł",
+    "loadingDate": "2023-05-16",
+    "comments": ["PROSZĘ PODAĆ DATĘ ZAŁADUNKU I ROZŁADUNKU!"]
+  },
+  {
+    "number": "19",
+    "id": "LL/ZAM/23/011871",
+    "from": "21-100 LUBARTÓW\nNOWODWORSKA 18\nwoj. lubelskie",
+    "destination": "21-200 Parczew\nwoj. lubelskie",
+    "distance": "0 km",
+    "perKilometer": "0 zł",
+    "surcharge": "60.00 zł",
+    "price": "440.00 zł",
+    "loadingDate": "2023-05-16",
+    "comments": ["PROSZĘ PODAĆ DATĘ I GODZINĘ ROZŁADUNKU !"]
+  },
+  {
+    "number": "20",
+    "id": "SP/ZAM/23/01262",
+    "from": "97-427 ROGOWIEC\nINSTALACYJNA 9\nwoj. łódzkie",
+    "destination": "18-400 Łomża\nwoj. podlaskie",
+    "distance": "324 km",
+    "perKilometer": "4.05 zł",
+    "surcharge": "50.00 zł",
+    "price": "1313.60 zł",
+    "loadingDate": "2023-05-16",
+    "comments": [
+      "załadunek do 17.00, plandeka",
+      "awizacja do 14.00 w bieżącym dniu",
+      "proszę podać datę rozładunku",
+      "",
+      "WYMAGANE ZABEZPIECZENIA: KASK, KAMIZELKA ODBLASKOWA, 12 PASÓW ZABEZPIECZAJĄCYCH"
     ]
   }
 ]
