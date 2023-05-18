@@ -1,10 +1,3 @@
-export const dataConverter = (dataJSON) => {
-  const convertedData = {
-    number: Number(dataJSON.number),
-    id: dataJSON.id,
-  };
-};
-
 interface ILocationData {
   code: string;
   city: string;

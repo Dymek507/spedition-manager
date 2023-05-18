@@ -6,12 +6,11 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { GoogleMap, useLoadScript, MarkerF, DirectionsService, DirectionsRenderer, useJsApiLoader } from '@react-google-maps/api';
 import Geocode from "react-geocode";
-import { ICargo } from '../types/modelTypes';
 import adressToCord from '../helpers/adressToCord';
-import { colors } from '@mui/material';
+import { ICargo } from '../types/model';
 
 const style = {
-  position: 'absolute' as 'absolute',
+  position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
@@ -38,7 +37,7 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
   const [directionsResponse, setDirectionsResponse] = React.useState<any>(null)
   const [distance, setDistance] = React.useState<undefined | string>()
 
-  const calculateRoute = async (fromCords, destinationCords) => {
+  const calculateRoute = async (fromCords: { lat: number; lng: number; }, destinationCords: { lat: number; lng: number; }) => {
     if (fromLocation === undefined || destinationLocation === undefined) return
     const directionsService = new google.maps.DirectionsService();
     const results = await directionsService.route({
@@ -55,9 +54,9 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
   React.useEffect(() => {
     const getCords = async () => {
       if (cargo.from === undefined || cargo.destination === undefined) return
-      const fromCords = await adressToCord(cargo.from)
+      const fromCords = await adressToCord(cargo.from.zipCode + ' ' + cargo.from.city)
       setFromLocation(fromCords)
-      const destinationCords = await adressToCord(cargo.destination)
+      const destinationCords = await adressToCord(cargo.destination.zipCode + ' ' + cargo.destination.city)
       setDestinationLocation(destinationCords)
       const center = { lat: (fromCords.lat + destinationCords.lat) / 2, lng: (fromCords.lng + destinationCords.lng) / 2 }
       setCenterLocation(center)
@@ -73,7 +72,7 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
   }
 
   const { isLoaded } = useJsApiLoader({
-    // @ts-ignore
+
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string,
     // libraries: ['places'],
   })

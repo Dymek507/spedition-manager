@@ -1,22 +1,20 @@
-import React from 'react'
-import { stringDivide } from '../helpers/dataConverter'
+import { ILocation } from "../types/model"
 
 interface PlaceDisplayProps {
-  placeData: string
+  placeData: ILocation
 }
 
 const PlaceDisplay = ({ placeData }: PlaceDisplayProps) => {
-  const dividedPlace = stringDivide(placeData)
   return (
     <div className='flex-col text-sm flex-center w-36'>
       <p>
-        {dividedPlace.code}
+        {placeData.zipCode}
       </p>
       <p>
-        {dividedPlace.city}
+        {placeData.city}
       </p>
       <p className='text-center'>
-        {dividedPlace.voivodeship}
+        {placeData.voivodeship}
       </p>
     </div>
   )

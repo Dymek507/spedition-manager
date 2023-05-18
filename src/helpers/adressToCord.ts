@@ -1,7 +1,5 @@
 import Geocode from "react-geocode";
-import { ICargo } from "../types/modelTypes";
 
-//@ts-ignore
 Geocode.setApiKey(import.meta.env.VITE_GOOGLE_MAPS_API_KEY);
 
 const DEFAULT_LOCATION = { lat: 52.237049, lng: 21.017532 };

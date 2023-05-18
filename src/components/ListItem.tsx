@@ -1,7 +1,6 @@
-import React from 'react'
-import { dataConverter, stringDivide } from '../helpers/dataConverter'
+import { ICargo } from '../types/model'
 import PlaceDisplay from './PlaceDisplay'
-import { ICargo } from '../types/modelTypes'
+
 
 interface ListItemProps {
   itemData: ICargo

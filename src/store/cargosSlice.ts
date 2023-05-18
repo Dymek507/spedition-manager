@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { ICargo } from "../types/modelTypes";
+import { ICargo } from "../types/model";
 
 interface IInitialState {
   cargos: ICargo[];

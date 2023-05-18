@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
-import { Modal } from '@mui/material'
 import { collection, doc, onSnapshot } from "firebase/firestore";
 import ListItem from './ListItem'
-import solbetData from '../data/solbet2.json'
 import InfoModal from './InfoModal'
-import { ICargo } from '../types/modelTypes'
 import { db } from "../../firebase"
+import { ICargo } from '../types/model';
 
 
 
