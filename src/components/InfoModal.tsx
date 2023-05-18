@@ -72,12 +72,6 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
     setDistance(undefined)
   }
 
-  // const { isLoaded } = useLoadScript({
-  //   // @ts-ignore
-  //   googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string,
-  // })
-
-
   const { isLoaded } = useJsApiLoader({
     // @ts-ignore
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string,
