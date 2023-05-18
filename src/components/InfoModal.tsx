@@ -36,6 +36,7 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
   const [destinationLocation, setDestinationLocation] = React.useState({ lat: 0, lng: 0 })
   const [directionsResponse, setDirectionsResponse] = React.useState<any>(null)
   const [distance, setDistance] = React.useState<undefined | string>()
+  const [alternativeDistance, setAlternativeDistance] = React.useState<undefined | string>()
 
   const calculateRoute = async (fromCords: { lat: number; lng: number; }, destinationCords: { lat: number; lng: number; }) => {
     if (fromLocation === undefined || destinationLocation === undefined) return
@@ -49,6 +50,7 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
     console.log(results)
     setDirectionsResponse(results)
     setDistance(results.routes[0].legs[0].distance?.text)
+    if (results.routes[1] !== undefined) setAlternativeDistance(results.routes[1].legs[0].distance?.text)
   }
 
   React.useEffect(() => {
@@ -69,6 +71,7 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
     closeHandler()
     setDirectionsResponse(null)
     setDistance(undefined)
+    setAlternativeDistance(undefined)
   }
 
   const { isLoaded } = useJsApiLoader({
@@ -91,6 +94,9 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
           <div className='flex-center'>
             <Typography id="modal-modal-title" variant="h6" component="h2">
               {distance}
+            </Typography>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              {alternativeDistance}
             </Typography>
           </div>
 
