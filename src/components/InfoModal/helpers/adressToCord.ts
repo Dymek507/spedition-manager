@@ -17,7 +17,7 @@ const adressToCord = async (
       }
     },
     (error) => {
-      console.log("error: " + placeName);
+      console.log("error: " + error);
       return DEFAULT_LOCATION;
     }
   );

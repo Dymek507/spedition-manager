@@ -1,4 +1,4 @@
-import { ILocation } from "../types/model"
+import { ILocation } from "../../types/model"
 
 interface PlaceDisplayProps {
   placeData: ILocation

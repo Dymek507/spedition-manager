@@ -20,4 +20,11 @@ export interface ICargo {
   unloadDate: string;
   weight?: string;
   comments: string;
+  company?: string;
+}
+
+export interface IRouteCords {
+  from: { lat: number; lng: number };
+  destination: { lat: number; lng: number };
+  center: { lat: number; lng: number };
 }

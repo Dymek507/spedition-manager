@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { collection, doc, onSnapshot } from "firebase/firestore";
-import ListItem from './ListItem'
-import InfoModal from './InfoModal'
+import ListItem from './ListItem/ListItemRoot'
+import InfoModal from './InfoModal/InfoModal'
 import { db } from "../../firebase"
 import { ICargo } from '../types/model';
 
@@ -19,7 +19,6 @@ const List = () => {
   const closeModal = () => {
     setOpen(false)
   }
-  console.log(cargoList)
 
   const cargosRef = collection(db, "cargos");
 
@@ -29,7 +28,6 @@ const List = () => {
       const firebaseCargosList = [] as ICargo[]
       cargos.forEach((cargo) => {
         firebaseCargosList.push(cargo.data() as ICargo)
-        console.log("Current cargos in CA: ")
       });
       setCargoList(firebaseCargosList)
     });
@@ -43,7 +41,7 @@ const List = () => {
     <div className='flex flex-col w-4/6 gap-4 wh-full'>
       <InfoModal open={open} closeHandler={closeModal} cargo={cargo} />
       {cargoList.map((item, index) => (
-        <ListItem key={index} itemData={item} openModal={openModal} />
+        <ListItem key={index} cargo={item} openModal={openModal} />
       ))}
     </div>
 
