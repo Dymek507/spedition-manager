@@ -6,7 +6,8 @@ export interface ILocation {
 }
 
 export interface ICargo {
-  stat: string;
+  status: string;
+  timeStamp: string;
   number: string;
   id: string;
   from: ILocation;
@@ -19,6 +20,7 @@ export interface ICargo {
   loadingDate: string;
   unloadDate: string;
   weight?: string;
+  type?: string;
   comments: string;
   company?: string;
 }

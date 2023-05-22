@@ -4,6 +4,8 @@ import Modal from '@mui/material/Modal';
 import { GoogleMap, DirectionsRenderer, useJsApiLoader } from '@react-google-maps/api';
 import { ICargo, IRouteCords } from '../../types/model';
 import React from 'react';
+import { DEFAULT_ROUTE_CORDS, getRouteCords } from '../../helpers/getRouteCords';
+import { calculateDirections } from '../../helpers/calculateDirections';
 
 
 const style = {
@@ -22,35 +24,34 @@ interface InfoModalProps {
   open: boolean
   closeHandler: () => void
   cargo: ICargo
-  routesOptions: google.maps.DirectionsResult | undefined
-  routeCords: IRouteCords
 }
 
 
-const InfoModal = ({ open, closeHandler, cargo, routesOptions, routeCords }: InfoModalProps) => {
+const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string,
     // libraries: ['places'],
   })
 
-  const [routeResult, setRouteResult] = React.useState<google.maps.DirectionsResult | undefined>()
+  const [routeResult, setRouteResult] = React.useState<google.maps.DirectionsResult | undefined>(undefined)
+  const [routeCords, setRouteCords] = React.useState<IRouteCords>(DEFAULT_ROUTE_CORDS)
+
 
   React.useEffect(() => {
-    const calculateDirections = async () => {
-      console.log(routeCords)
-      const directions = await new google.maps.DirectionsService().route({
-        origin: routeCords.from,
-        destination: routeCords.destination,
-        travelMode: google.maps.TravelMode.DRIVING,
-      })
-      setRouteResult(directions)
-      console.log(directions)
+    const getCords = async () => {
+      //Function take cargo data and from zipcode and city create ALL places cords
+      const cords = await getRouteCords(cargo)
+      setRouteCords(cords)
+      //Function take cords and calculate routes options
+      const calculatedDirections = await calculateDirections(cords)
+      setRouteResult(calculatedDirections)
     }
-    if (routeCords && isLoaded) {
-      calculateDirections()
+    if (cargo && isLoaded) {
+      getCords()
     }
-  }, [routeCords, isLoaded])
+  }, [cargo, isLoaded])
+
 
 
   const closeModal = () => {
@@ -67,7 +68,7 @@ const InfoModal = ({ open, closeHandler, cargo, routesOptions, routeCords }: Inf
       >
         <Box sx={style}>
           <div className='gap-6 flex-center'>
-            {routesOptions && routesOptions.routes.map((route, index: number) => (
+            {routeResult && routeResult.routes.map((route, index: number) => (
               <Typography key={index}>{route.legs[0].distance?.text}</Typography>
             ))}
           </div>

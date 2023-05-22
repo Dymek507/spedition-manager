@@ -7,6 +7,7 @@ import { calculateDirections } from '../../helpers/calculateDirections'
 import { useJsApiLoader } from '@react-google-maps/api'
 import { DEFAULT_ROUTE_CORDS, getRouteCords } from '../../helpers/getRouteCords'
 import Grid from '@mui/material/Unstable_Grid2/Grid2'
+import State from './State'
 
 
 interface ListItemProps {
@@ -41,8 +42,20 @@ const ListItem = ({ cargo, openModal }: ListItemProps) => {
     openModal(cargo, routesOptions, routeCords)
   }
 
+  const perKilometer = () => {
+    if (cargo.price && cargo.distance) {
+      const perKilometer = (cargo.price / cargo.distance).toFixed(2)
+      return perKilometer
+    } else {
+      return 0
+    }
+  }
+
   return (
     <Grid container spacing={1} className='w-full overflow-x-hidden text-sm text-white xl:text-2xl flex-center bg-gradient-to-r from-indigo-500 to-black'>
+      <Grid xxs={1} md={0.5} className="flex-center">
+        <State state={cargo.status} />
+      </Grid>
       <Grid xxs={2} md={1} className="flex-center">
         <img src={company_logos.get(cargo.company ?? "solbet")} alt="Company_logo" />
       </Grid>
@@ -65,7 +78,7 @@ const ListItem = ({ cargo, openModal }: ListItemProps) => {
         <DateDisplay dateString={cargo.loadingDate} />
       </Grid>
       <Grid xxs={1} md={0.5} className="flex-center">
-        {cargo.perKilometer}
+        {perKilometer()}
       </Grid>
       <Grid xxs={1} md={0.5} className="flex-center">
         {cargo.surcharge}
