@@ -1,10 +1,12 @@
 import List from "./components/List";
+import { themeMain } from "./AppMuiTheme";
+import { ThemeProvider } from "@mui/material";
 
 function App() {
   return (
-    <div className="w-screen h-screen p-8 bg-zinc-300 flex-center">
+    <ThemeProvider theme={themeMain}>
       <List />
-    </div>
+    </ThemeProvider>
   );
 }
 

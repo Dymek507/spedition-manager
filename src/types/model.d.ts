@@ -28,3 +28,9 @@ export interface IRouteCords {
   destination: { lat: number; lng: number };
   center: { lat: number; lng: number };
 }
+
+export interface IModalData {
+  cargo: ICargo;
+  routesOptions: google.maps.DirectionsResult | undefined;
+  routeCords: IRouteCords;
+}

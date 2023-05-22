@@ -1,12 +1,10 @@
-
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { GoogleMap, DirectionsRenderer, useJsApiLoader } from '@react-google-maps/api';
 import { ICargo, IRouteCords } from '../../types/model';
-import { DEFAULT_ROUTE_CORDS, getRouteCords } from './helpers/getRouteCords';
-import { calculateDirections } from './helpers/calculateDirections';
+import React from 'react';
+
 
 const style = {
   position: 'absolute',
@@ -24,37 +22,40 @@ interface InfoModalProps {
   open: boolean
   closeHandler: () => void
   cargo: ICargo
+  routesOptions: google.maps.DirectionsResult | undefined
+  routeCords: IRouteCords
 }
 
 
-const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
+const InfoModal = ({ open, closeHandler, cargo, routesOptions, routeCords }: InfoModalProps) => {
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string,
     // libraries: ['places'],
   })
 
-  const [routeCords, setRouteCords] = React.useState<IRouteCords>(DEFAULT_ROUTE_CORDS)
-  const [routesOptions, setRoutesOptions] = React.useState<google.maps.DirectionsResult | undefined>()
+  const [routeResult, setRouteResult] = React.useState<google.maps.DirectionsResult | undefined>()
 
   React.useEffect(() => {
-    const getCords = async () => {
-      //Function take cargo data and from zipcode and city create ALL places cords
-      const cords = await getRouteCords(cargo)
-      setRouteCords(cords)
-      //Function take cords and calculate routes options
-      const calculatedDirections = await calculateDirections(cords)
-      setRoutesOptions(calculatedDirections)
+    const calculateDirections = async () => {
+      console.log(routeCords)
+      const directions = await new google.maps.DirectionsService().route({
+        origin: routeCords.from,
+        destination: routeCords.destination,
+        travelMode: google.maps.TravelMode.DRIVING,
+      })
+      setRouteResult(directions)
+      console.log(directions)
     }
-    if (cargo && isLoaded) {
-      getCords()
+    if (routeCords && isLoaded) {
+      calculateDirections()
     }
-  }, [cargo, isLoaded])
+  }, [routeCords, isLoaded])
+
 
   const closeModal = () => {
     closeHandler()
-    setRoutesOptions(undefined)
-    setRouteCords(DEFAULT_ROUTE_CORDS)
+    setRouteResult(undefined)
   }
   return (
     <div>
@@ -72,7 +73,7 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
           </div>
           <div className='bg-sky-500 h-4/6'>
             <GoogleMap zoom={7} center={routeCords.center} mapContainerClassName='h-[600px]'>
-              {!!routesOptions && <DirectionsRenderer directions={routesOptions} />}
+              {routeResult && <DirectionsRenderer directions={routeResult} />}
             </GoogleMap>
           </div>
           <div>

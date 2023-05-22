@@ -6,15 +6,15 @@ interface PlaceDisplayProps {
 
 const PlaceDisplay = ({ placeData }: PlaceDisplayProps) => {
   return (
-    <div className='flex-col text-sm flex-center w-36'>
+    <div className='flex-col flex-center'>
       <p>
         {placeData.zipCode}
       </p>
-      <p>
+      <p className="text-[1.2em] font-bold">
         {placeData.city}
       </p>
-      <p className='text-center'>
-        {placeData.voivodeship}
+      <p className='text-center text-[0.7em]'>
+        {placeData.voivodeship?.slice(0, 12)}
       </p>
     </div>
   )

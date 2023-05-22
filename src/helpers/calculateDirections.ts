@@ -1,4 +1,4 @@
-import { IRouteCords } from "../../../types/model";
+import { IRouteCords } from "../types/model";
 
 export const calculateDirections = async ({
   from,

@@ -17,10 +17,10 @@ const DateDisplay = ({ dateString }: { dateString: string }) => {
 
 
   return (
-    <div className='w-[6%] flex-col flex-center'>
-      <div className='text-2xl'>{dateArr[2]}</div>
+    <div className='flex-col border-2 border-white flex-center'>
+      <div className='text-[1.3em]'>{dateArr[2]}</div>
       {!!day && <div>{days[day]}</div>}
-      <div>{dateArr[1] + "-" + dateArr[0]}</div>
+      <div className='text-[0.6em]'>{dateArr[1] + "-" + dateArr[0]}</div>
     </div>
   )
 }

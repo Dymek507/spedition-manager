@@ -1,4 +1,4 @@
-import { ICargo, IRouteCords } from "../../../types/model";
+import { ICargo, IRouteCords } from "../types/model";
 import adressToCord from "./adressToCord";
 
 export const DEFAULT_ROUTE_CORDS = {
