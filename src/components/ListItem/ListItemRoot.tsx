@@ -1,45 +1,40 @@
-import React from 'react'
 import { ICargo, IRouteCords } from '../../types/model'
 import DateDisplay from './DateDisplay'
 import PlaceDisplay from './PlaceDisplay'
 import company_logos from '../../assets/company_logos'
-import { calculateDirections } from '../../helpers/calculateDirections'
-import { useJsApiLoader } from '@react-google-maps/api'
-import { DEFAULT_ROUTE_CORDS, getRouteCords } from '../../helpers/getRouteCords'
 import Grid from '@mui/material/Unstable_Grid2/Grid2'
 import State from './State'
+import { useEffect } from 'react'
+import sendDistanceToFirebase from '../../helpers/sendDistanceToFirebase'
+import React from 'react'
 
 
 interface ListItemProps {
   cargo: ICargo
-  openModal: (cargo: ICargo, routesOptions: google.maps.DirectionsResult | undefined, routeCords: IRouteCords) => void
+  openModal: (cargo: ICargo) => void
+  selecredCargosIds: string[]
+  select: (id: string) => void
 }
 
-const ListItem = ({ cargo, openModal }: ListItemProps) => {
-  const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string,
-    // libraries: ['places'],
-  })
+const ListItem = ({ cargo, openModal, selecredCargosIds, select }: ListItemProps) => {
 
-  const [routeCords, setRouteCords] = React.useState<IRouteCords>(DEFAULT_ROUTE_CORDS)
-  const [routesOptions, setRoutesOptions] = React.useState<google.maps.DirectionsResult | undefined>()
+  const [selected, setSelected] = React.useState(false)
 
-  React.useEffect(() => {
-    const getCords = async () => {
-      //Function take cargo data and from zipcode and city create ALL places cords
-      const cords = await getRouteCords(cargo)
-      setRouteCords(cords)
-      //Function take cords and calculate routes options
-      const calculatedDirections = await calculateDirections(cords)
-      setRoutesOptions(calculatedDirections)
+
+  useEffect(() => {
+    if (selecredCargosIds.includes(cargo.id)) {
+      setSelected(true)
+    } else {
+      setSelected(false)
     }
-    if (cargo && isLoaded) {
-      getCords()
-    }
-  }, [cargo, isLoaded])
+  }, [selecredCargosIds])
+
+  useEffect(() => {
+    sendDistanceToFirebase(cargo)
+  }, [cargo])
 
   const openModalHandler = () => {
-    openModal(cargo, routesOptions, routeCords)
+    openModal(cargo)
   }
 
   const perKilometer = () => {
@@ -52,9 +47,10 @@ const ListItem = ({ cargo, openModal }: ListItemProps) => {
   }
 
   return (
-    <Grid container spacing={1} className='w-full overflow-x-hidden text-sm text-white xl:text-2xl flex-center bg-gradient-to-r from-indigo-500 to-black'>
+    <Grid onClick={() => select(cargo.id)} container spacing={1} className='w-full overflow-x-hidden text-sm text-white xl:text-2xl flex-center'
+      style={{ backgroundColor: selected ? "blue" : '' }}>
       <Grid xxs={1} md={0.5} className="flex-center">
-        <State state={cargo.status} />
+        <State state={cargo.state} />
       </Grid>
       <Grid xxs={2} md={1} className="flex-center">
         <img src={company_logos.get(cargo.company ?? "solbet")} alt="Company_logo" />

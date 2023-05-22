@@ -6,7 +6,7 @@ export interface ILocation {
 }
 
 export interface ICargo {
-  status: string;
+  state: string;
   timeStamp: string;
   number: string;
   id: string;

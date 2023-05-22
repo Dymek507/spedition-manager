@@ -2,7 +2,7 @@ import { ICargo } from '../../types/model'
 
 const DistanceDisplay = ({ cargo }: { cargo: ICargo }) => {
   return (
-    <div className='w-[2%] flex-center flex-col'>
+    <div className='flex-col flex-center'>
       <p>
         {cargo.distance}
       </p></div>

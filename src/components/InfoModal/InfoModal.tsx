@@ -34,12 +34,11 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
     // libraries: ['places'],
   })
 
-  const [routeResult, setRouteResult] = React.useState<google.maps.DirectionsResult | undefined>(undefined)
+  const [routeResult, setRouteResult] = React.useState<google.maps.DirectionsResult | undefined>()
   const [routeCords, setRouteCords] = React.useState<IRouteCords>(DEFAULT_ROUTE_CORDS)
 
-
   React.useEffect(() => {
-    const getCords = async () => {
+    const getRoute = async () => {
       //Function take cargo data and from zipcode and city create ALL places cords
       const cords = await getRouteCords(cargo)
       setRouteCords(cords)
@@ -48,16 +47,16 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
       setRouteResult(calculatedDirections)
     }
     if (cargo && isLoaded) {
-      getCords()
+      getRoute()
     }
   }, [cargo, isLoaded])
-
-
 
   const closeModal = () => {
     closeHandler()
     setRouteResult(undefined)
+    setRouteCords(DEFAULT_ROUTE_CORDS)
   }
+
   return (
     <div>
       <Modal
@@ -73,9 +72,13 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
             ))}
           </div>
           <div className='bg-sky-500 h-4/6'>
-            <GoogleMap zoom={7} center={routeCords.center} mapContainerClassName='h-[600px]'>
-              {routeResult && <DirectionsRenderer directions={routeResult} />}
-            </GoogleMap>
+            {isLoaded && routeCords &&
+              <GoogleMap zoom={7} center={routeCords.center} mapContainerClassName='h-[600px]'>
+                {routeResult &&
+                  <DirectionsRenderer directions={routeResult} />
+                }
+              </GoogleMap>
+            }
           </div>
           <div>
             {cargo.comments ? cargo.comments : 'Brak komentarza'}
