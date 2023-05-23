@@ -6,6 +6,7 @@ import { ICargo, IRouteCords } from '../../types/model';
 import React from 'react';
 import { DEFAULT_ROUTE_CORDS, getRouteCords } from '../../helpers/getRouteCords';
 import { calculateDirections } from '../../helpers/calculateDirections';
+import OpenStreetMapExample from './OpenMaps';
 
 
 const style = {
@@ -72,13 +73,14 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
             ))}
           </div>
           <div className='bg-sky-500 h-4/6'>
-            {isLoaded && routeCords &&
+            {/* {isLoaded && routeCords &&
               <GoogleMap zoom={7} center={routeCords.center} mapContainerClassName='h-[600px]'>
                 {routeResult &&
                   <DirectionsRenderer directions={routeResult} />
                 }
               </GoogleMap>
-            }
+            } */}
+            <OpenStreetMapExample />
           </div>
           <div>
             {cargo.comments ? cargo.comments : 'Brak komentarza'}
