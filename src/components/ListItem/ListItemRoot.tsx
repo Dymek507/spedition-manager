@@ -29,9 +29,9 @@ const ListItem = ({ cargo, openModal, selecredCargosIds, select }: ListItemProps
     }
   }, [selecredCargosIds])
 
-  useEffect(() => {
-    sendDistanceToFirebase(cargo)
-  }, [cargo])
+  // useEffect(() => {
+  //   sendDistanceToFirebase(cargo)
+  // }, [cargo])
 
   const openModalHandler = () => {
     openModal(cargo)
@@ -47,12 +47,12 @@ const ListItem = ({ cargo, openModal, selecredCargosIds, select }: ListItemProps
   }
 
   return (
-    <Grid onClick={() => select(cargo.id)} container spacing={1} className='w-full overflow-x-hidden text-sm text-white xl:text-2xl flex-center'
+    <Grid container spacing={1} className='w-full overflow-x-hidden text-sm text-white xl:text-2xl flex-center'
       style={{ backgroundColor: selected ? "blue" : '' }}>
       <Grid xxs={1} md={0.5} className="flex-center">
         <State state={cargo.state} />
       </Grid>
-      <Grid xxs={2} md={1} className="flex-center">
+      <Grid xxs={2} md={1} className="flex-center" onClick={() => select(cargo.id)}>
         <img src={company_logos.get(cargo.company ?? "solbet")} alt="Company_logo" />
       </Grid>
       <Grid xxs={3} md={1} className="flex-center text-[0.8em] text-center">

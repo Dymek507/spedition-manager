@@ -2,7 +2,7 @@ import { ICargo } from "../types/model";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 import { calculateDirections } from "./calculateDirections";
-import { getRouteCords } from "./getRouteCords";
+import { getRouteCords } from "./getRouteCords/getRouteCords";
 
 const sendDistanceToFirebase = async (cargo: ICargo) => {
   const updateCargoData = async () => {
