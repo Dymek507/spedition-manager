@@ -3,9 +3,7 @@ import Modal from '@mui/material/Modal';
 import { ICargo, IRouteCords } from '../../types/model';
 import React, { useEffect } from 'react';
 import { DEFAULT_ROUTE_CORDS, getRouteCords } from '../../helpers/getRouteCords/getRouteCords';
-import OpenStreetMapExample from './OpenMaps';
-import positionFromString from '../../helpers/getRouteCords/positionFromObj';
-import positionFromObj from '../../helpers/getRouteCords/positionFromObj';
+import Map from './Map';
 
 
 const style = {
@@ -64,7 +62,8 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
             ))}
           </div> */}
           <div className='bg-sky-500 h-4/6'>
-            <OpenStreetMapExample routeCords={routeCords} />
+            {/* <OpenStreetMapExample routeCords={routeCords} /> */}
+            <Map routeCords={routeCords} />
           </div>
           <div>
             {cargo.comments ? cargo.comments : 'Brak komentarza'}
