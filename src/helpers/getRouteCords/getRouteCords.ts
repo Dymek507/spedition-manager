@@ -7,10 +7,10 @@ export const DEFAULT_ROUTE_CORDS = {
   center: { lat: 54.60839, lng: 18.8006 },
 };
 
-export const getRouteCords = async (cargo: ICargo): Promise<IRouteCords> => {
-  console.log(cargo.from, cargo.destination);
-  if (cargo.from && cargo.destination === undefined) return DEFAULT_ROUTE_CORDS;
-  console.log("destination");
+export const getRouteCords = async (
+  cargo: ICargo
+): Promise<IRouteCords | undefined> => {
+  if (cargo.from && cargo.destination === undefined) return undefined;
 
   const fromCords = await positionFromObj(cargo.from);
   const destinationCords = await positionFromObj(cargo.destination);

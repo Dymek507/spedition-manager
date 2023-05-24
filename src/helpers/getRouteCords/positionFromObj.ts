@@ -10,7 +10,6 @@ interface IParams {
 const NOMINATIM_BASE_URL = "https://nominatim.openstreetmap.org/search?";
 
 const positionFromObj = async (from: ILocation) => {
-  console.log(from);
   // Search
   const params: IParams = {
     q: from.zipCode + " " + from.city,

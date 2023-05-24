@@ -28,13 +28,11 @@ interface InfoModalProps {
 
 const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
 
-  const [routeCords, setRouteCords] = React.useState<IRouteCords>(DEFAULT_ROUTE_CORDS)
+  const [routeCords, setRouteCords] = React.useState<IRouteCords | undefined>(undefined)
 
   useEffect(() => {
     async function getRoute() {
-      console.log('infomodal useeffect')
       const cargoCords = await getRouteCords(cargo)
-      console.log(cargoCords)
       setRouteCords(cargoCords)
     }
     if (cargo.from && cargo.destination) getRoute()
@@ -44,7 +42,7 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
 
   const closeModal = () => {
     closeHandler()
-    setRouteCords(DEFAULT_ROUTE_CORDS)
+    setRouteCords(undefined)
   }
 
   return (
