@@ -54,14 +54,12 @@ const InfoModal = ({ open, closeHandler, cargo }: InfoModalProps) => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          {/* <div className='gap-6 flex-center'>
-            {routeResult && routeResult.routes.map((route, index: number) => (
-              <Typography key={index}>{route.legs[0].distance?.text}</Typography>
-            ))}
-          </div> */}
+          <div className='gap-6 flex-center'>
+            {cargo.distance ? cargo.distance : 'Brak dystansu'}
+          </div>
           <div className='bg-sky-500 h-4/6'>
             {/* <OpenStreetMapExample routeCords={routeCords} /> */}
-            <Map routeCords={routeCords} />
+            <Map routeCords={routeCords} cargo={cargo} />
           </div>
           <div>
             {cargo.comments ? cargo.comments : 'Brak komentarza'}

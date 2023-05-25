@@ -1,28 +1,25 @@
 import { ICargo } from "../types/model";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase";
-import { calculateDirections } from "./calculateDirections";
-import { getRouteCords } from "./getRouteCords/getRouteCords";
 
-const sendDistanceToFirebase = async (cargo: ICargo) => {
+interface IRouteSummary {
+  totalDistance: number;
+  totalTime: number;
+}
+
+const sendDistanceToFirebase = async (
+  cargo: ICargo,
+  routeSummary: IRouteSummary
+) => {
+  if (cargo.distance !== 0) return;
   const updateCargoData = async () => {
-    console.log("Updating cargo distance");
     const cargoRef = doc(db, "cargos", cargo.id);
-    //Convert adress to cords
-    const routeCords = await getRouteCords(cargo);
-    //Calculate route
-    const result = await calculateDirections(routeCords);
-    //Update cargo distance
-    if (result !== undefined) {
-      const newDistance = result.routes[0].legs[0].distance?.value ?? 1;
-      await updateDoc(cargoRef, {
-        distance: (newDistance / 1000).toFixed(0),
-      });
-    }
+    await updateDoc(cargoRef, {
+      distance: (routeSummary.totalDistance / 1000).toFixed(0),
+      time: routeSummary.totalTime / 60 / 3600,
+    });
   };
-  if (cargo.distance === 0) {
-    await updateCargoData();
-  }
+  await updateCargoData();
 };
 
 export default sendDistanceToFirebase;
