@@ -2,11 +2,11 @@ import { ICargo, IRouteCords } from '../../types/model'
 import DateDisplay from './DateDisplay'
 import PlaceDisplay from './PlaceDisplay'
 import company_logos from '../../assets/company_logos'
-import Grid from '@mui/material/Unstable_Grid2/Grid2'
-import State from './State'
+import Grid from '@mui/material/Grid'
 import { useEffect } from 'react'
 import sendDistanceToFirebase from '../../helpers/sendDistanceToFirebase'
 import React from 'react'
+import State from './State'
 
 
 interface ListItemProps {
@@ -48,44 +48,51 @@ const ListItem = ({ cargo, openModal, selecredCargosIds, select }: ListItemProps
 
   return (
     <Grid container spacing={1} className='w-full overflow-x-hidden text-sm text-white xl:text-2xl flex-center'
-      style={{ backgroundColor: selected ? "blue" : '' }}>
-      <Grid xxs={1} md={0.5} className="flex-center">
-        <State state={cargo.state} />
+      style={{ backgroundColor: selected ? "gray" : 'black' }}>
+      {/* Checkbox */}
+      <Grid item xxs={1} md={0.5} className="flex-center">
+        <input type="checkbox" className='w-5 h-5' checked={selected} onChange={() => select(cargo.id)} />
       </Grid>
-      <Grid xxs={2} md={1} className="flex-center" onClick={() => select(cargo.id)}>
+      {/* State */}
+      <Grid item xxs={1} md={0.5} className="flex-center wh-full">
+        <State cargo={cargo} />
+      </Grid>
+      {/* Logo */}
+      <Grid item xxs={2} md={1} className="flex-center" >
         <img src={company_logos.get(cargo.company ?? "solbet")} alt="Company_logo" />
       </Grid>
-      <Grid xxs={3} md={1} className="flex-center text-[0.8em] text-center">
+      {/* Id*/}
+      <Grid item xxs={3} md={1} className="flex-center text-[0.6em] text-center">
         <p>
           {cargo.id.slice(0, 18)}
         </p>
       </Grid>
-      <Grid xxs={2} md={2}>
+      <Grid item xxs={2} md={2}>
         <PlaceDisplay placeData={cargo.from} />
       </Grid>
-      <Grid xxs={2} md={0.5} className="flex-center">
+      <Grid item xxs={2} md={0.5} className="flex-center">
         {cargo.distance}
       </Grid>
-      <Grid xxs={2} md={2}>
+      <Grid item xxs={2} md={2}>
         <PlaceDisplay placeData={cargo.destination} />
       </Grid>
       {/* Second Line in xss devices */}
-      <Grid xxs={2} md={1} className="p-2">
+      <Grid item xxs={2} md={1} className="p-2">
         <DateDisplay dateString={cargo.loadingDate} />
       </Grid>
-      <Grid xxs={1} md={0.5} className="flex-center">
+      <Grid item xxs={1} md={0.5} className="flex-center">
         {perKilometer()}
       </Grid>
-      <Grid xxs={1} md={0.5} className="flex-center">
-        {cargo.surcharge}
+      <Grid item xxs={1} md={0.5} className="flex-center">
+        {cargo.surcharge || 0}
       </Grid>
-      <Grid xxs={2} md={0.5} className="flex-center">
-        {cargo.price}
+      <Grid item xxs={2} md={0.5} className="flex-center">
+        {cargo.price.toFixed(0)}
       </Grid>
-      <Grid xxs={2} md={1}>
+      <Grid item xxs={2} md={1}>
         <DateDisplay dateString={cargo.unloadDate} />
       </Grid>
-      <Grid xs={12} md={1} className="flex-center">
+      <Grid item xxs={12} md={1} className="flex-center">
         <button onClick={openModalHandler}>Szczegóły</button>
       </Grid>
     </Grid>

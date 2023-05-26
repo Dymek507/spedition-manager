@@ -1,0 +1,15 @@
+export const HEADER_ITEMS = [
+  { name: "Wyb.", xxs: 1, md: 0.5 },
+  { name: "Status", xxs: 1, md: 0.5 },
+  { name: "Firma", xxs: 2, md: 1 },
+  { name: "Id", xxs: 3, md: 1 },
+  { name: "Załadunek", xxs: 2, md: 2 },
+  { name: "Dystans", xxs: 2, md: 0.5 },
+  { name: "Rozładunek", xxs: 2, md: 2 },
+  { name: "Data zał.", xxs: 2, md: 1 },
+  { name: "zł./km", xxs: 1, md: 0.5 },
+  { name: "Dopłata", xxs: 1, md: 0.5 },
+  { name: "Cena", xxs: 2, md: 0.5 },
+  { name: "Data rozł.", xxs: 2, md: 1 },
+  { name: "Szczegóły", xxs: 12, md: 1 },
+];

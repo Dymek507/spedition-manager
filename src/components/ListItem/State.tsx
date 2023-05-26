@@ -1,20 +1,48 @@
+import React, { useEffect } from "react"
+import { ICargo } from "../../types/model"
+import { doc, updateDoc } from "firebase/firestore"
+import { db } from "../../../firebase"
 
-const State = ({ state }: { state: string }) => {
-  let stateColor = ''
+interface StateProps {
+  cargo: ICargo
+}
 
-  switch (state) {
-    case 'active':
-      stateColor = 'green'
-      break;
-    case 'Minął czas':
-      stateColor = 'red'
-      break;
-    default:
-      stateColor = 'yellow'
-      break;
-  }
+const State = ({ cargo }: StateProps) => {
+  const { state, timeStamp } = cargo
+  const [stateColor, setStateColor] = React.useState('' as string)
+  const actualTimeStamp = Date.now()
+  const timeDiff = actualTimeStamp - Number(timeStamp)
+
+  useEffect(() => {
+    if (timeDiff > 3600000) {
+      const updateState = async () => {
+        const cargoRef = doc(db, "cargos", cargo.id)
+        await updateDoc(cargoRef, {
+          state: "expired"
+        });
+      }
+      updateState()
+    }
+  }, [cargo])
+
+
+
+  useEffect(() => {
+    switch (state) {
+      case 'active':
+        setStateColor('green')
+        break;
+      case 'expired':
+        setStateColor('red')
+        break;
+      default:
+        setStateColor('yellow')
+        break;
+    }
+  }, [state])
+
   return (
-    <div className='flex-center text-[0.8em]' style={{ backgroundColor: stateColor }}><p>{state}</p></div>
+    <div className='flex-center w-5 h-5 rounded-full text-[0.8em]' style={{ backgroundColor: stateColor }}></div>
   )
 }
 

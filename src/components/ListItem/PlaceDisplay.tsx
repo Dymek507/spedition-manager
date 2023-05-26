@@ -10,7 +10,7 @@ const PlaceDisplay = ({ placeData }: PlaceDisplayProps) => {
       <p>
         {placeData.zipCode}
       </p>
-      <p className="text-[1.2em] font-bold">
+      <p className="text-[1.2em] font-bold capitalize">
         {placeData.city}
       </p>
       <p className='text-center text-[0.7em]'>

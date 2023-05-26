@@ -40,7 +40,7 @@ const Map = ({ routeCords, cargo }: IMapProps) => {
 
   return (
     <>
-      {start && end && (
+      {start && end && routeCords && (
         <MapContainer
           center={routeCords.center}
           zoom={12}

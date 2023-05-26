@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import plugin from "tailwindcss/plugin";
+import daisyui from "daisyui";
 
 const Myclass = plugin(function ({ addUtilities }) {
   addUtilities({
@@ -37,8 +38,7 @@ export default {
     },
     extend: {
       animation: {
-        slidey: "movey 3s linear 1s",
-        slideyb: "moveyb 3s linear infinite",
+        slidey: "upslide 0.2s linear 0s",
       },
       boxShadow: {
         "3xl": "0 65px 90px -30px rgba(0, 0, 0, 1)",
@@ -65,15 +65,10 @@ export default {
         "card-stats": "repeat(3, 0.94em)",
       },
       keyframes: {
-        movey: {
-          "0%": { transform: "translate(0px,0px)" },
-          "50%": { transform: "translate(0px,600px)" },
-          "100%": { transform: "translate(0px,1000px)" },
-        },
-        moveyb: {
-          "0%": { transform: "translate(0px,0px)" },
-          "50%": { transform: "translate(0px,-600px)" },
-          "100%": { transform: "translate(0px,-1000px)" },
+        upslide: {
+          "0%": { transform: "translate(0px,200px)", opacity: 0 },
+          "50%": { transform: "translate(0px,100px)", opacity: 0.5 },
+          "100%": { transform: "translate(0px,0px)", opacity: 1 },
         },
       },
       screens: {
@@ -85,5 +80,5 @@ export default {
       },
     },
   },
-  plugins: [Myclass],
+  plugins: [Myclass, daisyui],
 };
