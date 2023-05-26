@@ -16,6 +16,8 @@ export interface ICargo {
   distance: number;
   perKilometer: number;
   surcharge: number;
+  bid?: number | null;
+  timeLeft?: string;
   price: number;
   loadingDate: string;
   unloadDate: string;

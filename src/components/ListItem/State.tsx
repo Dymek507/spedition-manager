@@ -14,7 +14,7 @@ const State = ({ cargo }: StateProps) => {
   const timeDiff = actualTimeStamp - Number(timeStamp)
 
   useEffect(() => {
-    if (timeDiff > 3600000) {
+    if (timeDiff > 1000 * 60 * 2) {
       const updateState = async () => {
         const cargoRef = doc(db, "cargos", cargo.id)
         await updateDoc(cargoRef, {

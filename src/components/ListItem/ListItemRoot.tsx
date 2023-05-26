@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import sendDistanceToFirebase from '../../helpers/sendDistanceToFirebase'
 import React from 'react'
 import State from './State'
+import AuctionDisplay from './AuctionDisplay'
 
 
 interface ListItemProps {
@@ -28,10 +29,6 @@ const ListItem = ({ cargo, openModal, selecredCargosIds, select }: ListItemProps
       setSelected(false)
     }
   }, [selecredCargosIds])
-
-  // useEffect(() => {
-  //   sendDistanceToFirebase(cargo)
-  // }, [cargo])
 
   const openModalHandler = () => {
     openModal(cargo)
@@ -84,7 +81,7 @@ const ListItem = ({ cargo, openModal, selecredCargosIds, select }: ListItemProps
         {perKilometer()}
       </Grid>
       <Grid item xxs={1} md={0.5} className="flex-center">
-        {cargo.surcharge || 0}
+        <AuctionDisplay surcharge={cargo.surcharge} timeLeft={cargo.timeLeft} bid={cargo.bid} />
       </Grid>
       <Grid item xxs={2} md={0.5} className="flex-center">
         {cargo.price.toFixed(0)}
