@@ -19,10 +19,14 @@ const AuctionDisplay = ({ surcharge, timeLeft, bid }: IAuctionDisplayProps) => {
       return (
         <p>Start</p>
       )
+    case ("Czas minął"):
+      return (
+        <p>End</p>
+      )
     default:
       return (
         <div className="flex-col flex-center">
-          <p>{bid}</p>
+          <p>{bid && bid}</p>
           <p>{timeLeft ? timeLeftDisplay : null}</p>
         </div>
       )

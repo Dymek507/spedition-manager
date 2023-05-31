@@ -17,7 +17,7 @@ const DateDisplay = ({ dateString }: { dateString: string }) => {
 
 
   return (
-    <div className='flex-col border-2 border-white flex-center'>
+    <div className='flex-col border-2 border-black flex-center'>
       <div className='text-[1.3em]'>{dateArr[2]}</div>
       {!!day && <div>{days[day]}</div>}
       <div className='text-[0.6em]'>{dateArr[1] + "-" + dateArr[0]}</div>

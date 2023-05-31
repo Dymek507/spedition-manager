@@ -8,6 +8,7 @@ import sendDistanceToFirebase from '../../helpers/sendDistanceToFirebase'
 import React from 'react'
 import State from './State'
 import AuctionDisplay from './AuctionDisplay'
+import DistanceDisplay from './DistanceDisplay'
 
 
 interface ListItemProps {
@@ -44,8 +45,8 @@ const ListItem = ({ cargo, openModal, selecredCargosIds, select }: ListItemProps
   }
 
   return (
-    <Grid container spacing={1} className='w-full overflow-x-hidden text-sm text-white xl:text-2xl flex-center'
-      style={{ backgroundColor: selected ? "gray" : 'black' }}>
+    <Grid container spacing={1} className='w-full overflow-x-hidden text-sm text-black xl:text-2xl flex-center'
+      style={{ backgroundColor: selected ? "gray" : 'white' }}>
       {/* Checkbox */}
       <Grid item xxs={1} md={0.5} className="flex-center">
         <input type="checkbox" className='w-5 h-5' checked={selected} onChange={() => select(cargo.id)} />
@@ -68,7 +69,7 @@ const ListItem = ({ cargo, openModal, selecredCargosIds, select }: ListItemProps
         <PlaceDisplay placeData={cargo.from} />
       </Grid>
       <Grid item xxs={2} md={0.5} className="flex-center">
-        {cargo.distance}
+        <DistanceDisplay cargo={cargo} />
       </Grid>
       <Grid item xxs={2} md={2}>
         <PlaceDisplay placeData={cargo.destination} />

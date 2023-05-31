@@ -85,7 +85,7 @@ const List = () => {
 
 
   return (
-    <div className="flex flex-col gap-3 xl:gap-6 wh-full sm:p-4 xl:px-10 xl:pt-0 bg-gradient-to-r from-green-500 to-green-700 flex-center">
+    <div className="flex flex-col gap-3 xl:gap-6 wh-full sm:p-4 xl:px-10 xl:pt-0 bg-gradient-to-r from-blue-300 to-blue-500 flex-center">
       <InfoModal open={open} closeHandler={closeModal} cargo={cargo} />
       <TablerHeader handleSorting={handleSorting} />
       {showToolbox && <Toolbox deleteCargos={deleteCargos} />}
